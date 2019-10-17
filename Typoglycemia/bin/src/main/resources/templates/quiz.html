@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+</head>
+<body>
+<h1>Quiz</h1>
+<form method="post" action="/quiz">
+変換する文字を入力<input type="text" name="original" th:value="${original_value}">
+<input type="submit" value="送信" />
+</form>
+
+</body>
+</html>

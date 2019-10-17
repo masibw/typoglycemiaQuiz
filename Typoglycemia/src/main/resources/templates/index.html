@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=UA-141695337-2"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-141695337-2');
+</script>
+
+<meta charset="UTF-8"></meta>
+<link th:href="@{css/style.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}"
+	type="text/css" rel="stylesheet"></link>
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat:700i&display=swap"
+	rel="stylesheet">
+<script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"
+	type="text/javascript"></script>
+<script th:src="@{/webjars/bootstrap/4.1.3/js/bootstrap.min.js}"
+	type="text/javascript"></script>
+<script th:src="@{/js/scroll.js}"></script>
+<title>Index</title>
+</head>
+<body>
+	<div id="index">
+		<div class="container-purple">
+			<div class="contents-top text-center">
+				<h1 class="title">タイポグリセミアクイズ</h1>
+				<a href="#discription" class="btn-flat">What this?</a> <a
+					href="#container-yellow" class="btn-flat">Challenge Quiz</a>
+			</div>
+		</div>
+
+		<div class="discription text-center container-white" id="discription">
+			<div class="contents-discription">
+				<h2 class="title">タイポグリセミアとは</h2>
+				<div class="middle-contents">
+					<p>文章中の単語の最初と最後の文字以外の順番が変わっていても読める現象のことです。</p>
+					<br>
+					<p>
+						例えば<strong>「こちにんは これは タイポグリセミア ぶんょしう の れぶいん です」</strong>という文章があった場合
+					</p>
+					<br>
+					<p>いくつか順番が変わっている箇所がありますが、意味を取ることができます。</p>
+					<p>単語の最初と最後の文字は必ず固定されています。</p>
+					<a href="#container-yellow" class="btn-flat">Next</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-yellow text-center" id="container-yellow">
+			<div class="contents-quiz">
+				<h2 class="title">タイポグリセミアクイズについて</h2>
+				<div class="middle-contents">
+					<p>タイポグリセミア化された文章の正しい意味となる原文を単語ごとにスペースで区切って答えていただきます。</p>
+					<br>
+					<p>
+						<strong>「こちにんは これは タイポグリセミア ぶんょしう の れぶいん です」</strong>という問題があれば
+					</p>
+					<br>
+					<p>
+						<strong>「こんにちは これは タイポグリセミア ぶんしょう の れいぶん です」</strong>と入力してください。
+					</p>
+					<div class="mx-auto" style="width: 200px;">
+						<a class="btn-flat" th:href="@{/quiz}">Challenge Quiz</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="/terms" style="color: white;">利用規約</a>
+			<p>©︎2019 mesimasi All Rights Reserved.</p>
+		</div>
+	</div>
+</body>
+<style>
+html {
+	background-color
+:
+#666
+!important;
+}
+</style>
+</html>

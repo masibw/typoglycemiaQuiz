@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+body {
+	font-size: 18px;
+}
+
+strong {
+	font-size: 1.5em;
+}
+
+.title {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 4em;
+	color: #444;
+	margin-top: 1rem;
+}
+
+.container-purple {
+	background: linear-gradient(-45deg, rgba(161, 140, 209, .8),
+		rgba(251, 194, 235, .8)), url(img/top-bg.jpg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+.contents-top {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	-webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+.discription {
+	position: relative;
+	height: 100vh;
+}
+
+.container-white {
+	background-color: white;
+}
+
+.contents-discription {
+	width: 80%;
+}
+
+.contents-discription {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	　transform: translate(-50%, -50%);
+}
+
+.btn-flat {
+	display: inline-block;
+	text-decoration: none;
+	background-color: white;
+	color: #666;
+	border: solid 2px #666;
+	border-radius: 50%;
+	transition: .4s;
+	width: 120px;
+	height: 120px;
+	margin: 20px;
+}
+
+a.btn-flat {
+	line-height: 120px
+}
+
+.btn-flat:hover {
+	background: #666;
+	color: white;
+}
+
+.container-yellow {
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	height: 100vh;
+	position: relative;
+}
+
+.contents-quiz {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	　transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+.answer-textarea {
+	height: 300px;
+	width: 80%;
+}
+
+.quiz {
+	font-size: 3em;
+}
+
+.container-blue {
+	background: linear-gradient(-45deg, rgba(161, 196, 253, .8),
+		rgba(194, 233, 251, .8)), url(img/quiz-bg.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+.container-green {
+	height: 100vh;
+	background: linear-gradient(-45deg, rgba(132, 250, 176, .94),
+		rgba(143, 211, 244, .94)), url(img/correct-bg.jpg);
+	background-size: cover;
+}
+
+.container-red {
+	background: linear-gradient(-45deg, rgba(247, 140, 160, .8),
+		rgba(253, 134, 140, .8)), url(img/sunset-bg.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+.footer {
+	text-align: center;
+	background-color: #666;
+	color: white;
+	list-style-type: none;
+	width: 100%;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+.middle-contents {
+	margin: 10%;
+}
+
+.quiztext {
+	border: solid 2px;
+}
+
+p h1 h2 h3 h4 a {
+	color: #666;
+}
+
+.wrong {
+	color: red;
+}
+
+.resultButton {
+	display: inline-block;
+	background-color: #666;
+	color: #FFF;
+	width: 160px;
+	padding: 0.8em;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0
+		rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	-webkit-tap-highlight-color: transparent;
+	transition: .3s ease-out;
+	margin: 20px;
+}
+
+.resultButton:hover {
+	cursor: pointer;
+	color: #FFF;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 3px 20px 0
+		rgba(0, 0, 0, 0.12), 0 5px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.submitButton {
+	display: inline-block;
+	background-color: #2FCDB4;
+	color: #666;
+	width: 160px;
+	padding: 0.8em;
+	text-decoration: none;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0
+		rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	-webkit-tap-highlight-color: transparent;
+	transition: .3s ease-out;
+}
+
+.submitButton:hover {
+	cursor: pointer;
+	color: #666;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12), 0 3px 20px 0
+		rgba(0, 0, 0, 0.12), 0 5px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+.container-terms {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 90%;
+}
+
+.contents-terms {
+	position: absolute;
+	left: 50%; transform : translateX( -50%);
+	-webkit- transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.home {
+	width: 40px;
+	height: 40px;
+	color: #666;
+	margin: 1%;
+	position: fixed;
+	cursor: pointer;
+	fill: white;
+	text-align: left;
+}
+
+#loginForm {
+	margin-top:2em;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit- transform: translateX(-50%);
+}
